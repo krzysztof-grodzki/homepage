@@ -4,17 +4,16 @@ body {
 
     margin: 20px;
     padding: 10px;
-    background: #e9e9ec
+    background: #e9e9ec;
 }
 
 header {
-    background: #586F7C;
-    padding: 5px;
+    font-family: 'Ubuntu', Courier, monospace;
 
 }
 
 h1 {
-    color: #F4F4F9;
+    color: #2F4550;
     font-family: 'Ubuntu', Courier, monospace;
     font-weight: 500;
 
@@ -26,6 +25,17 @@ h2,h3 {
     color: #2F4550;
     font-family: 'Ubuntu', Courier, monospace;
     font-weight: 500;
+}
+
+.navigation {
+    background: #586F7C;
+    padding: 16px;
+}
+
+.navigation__link {
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 25px;
 }
 
 
