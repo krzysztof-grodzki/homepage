@@ -5,10 +5,14 @@ body {
     margin: 20px;
     padding: 10px;
     background: #e9e9ec;
+    line-height: 150%;
+
 }
 
 header {
     font-family: 'Ubuntu', Courier, monospace;
+    font-size: 16px;
+
 
 }
 
@@ -16,6 +20,7 @@ h1 {
     color: #2F4550;
     font-family: 'Ubuntu', Courier, monospace;
     font-weight: 500;
+    font-size: 45px;
 
 
 }
