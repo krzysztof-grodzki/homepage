@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona domowa</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
 
-
-</head>
-
-<body>
-
+  <body>
     <header class="header">
-
-        <nav class="navigation">
-            <a class="navigation__link" href="index.html"> Strona główna</a>
+      <div class="navigation__wrapper">
+        <div class="header-logo"><a href="index.html">Krzysztof Grodzki</a></div>
+        <div class="header__nav">
+          <nav class="navigation">
+            <a class="navigation__link navigation__link--homepage" href="index.html">
+              Strona główna</a
+            >
             <a class="navigation__link" href="nauka-html5.html">HTML</a>
             <a class="navigation__link" href="nauka-css3.html">CSS</a>
             <a class="navigation__link" href="nauka-javascript.html">Javascript</a>
-        </nav>
-
+          </nav>
+        </div>
+      </div>
     </header>
 
-    <main>
-        <header id="top">
-            <h1>Krzysztof Grodzki - Strona domowa</h1>
-        </header>
+    <main class="main">
+      <header id="top">
+        <h1>Dziennik pokładowy szkolenia technologii HTML, CSS oraz Javascript</h1>
+      </header>
 
+      <section>
+        <h2>Kim jestem?</h2>
+        <img class="photo" src="zadumka.png" alt="Zadumiony Krzysztof" />
+        <p>
+          Przez ostatnie 15 lat trochę drukowałem na różnych podłożach, teraz pora na wypełnianie
+          treścią World Wide Web. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+          facere nesciunt aperiam quidem quasi est molestiae alias, magnam voluptatibus commodi
+          obcaecati animi iure accusantium eos in reprehenderit veritatis autem officia.
+          <a href="#notatki">Przejdź</a>
+        </p>
+      </section>
 
-        <section>
-            <h2>Kim jestem?</h2>
-            <img class="photo" src="zadumka.png" alt="Zadumiony Krzysztof" />
-            <p>Przez ostatnie 15 lat trochę drukowałem na różnych podłożach, teraz pora na wypełnianie treścią World
-                Wide Web.</br><a href="#notatki">Przejdź</a></p>
+      <section id="notatki">
+        <h2>Dziennik WTF</h2>
+        <article>
+          <h3>Tydzień 1</h3>
+          <p>
+            Organizacja i zasady. Ogólne wprowadzenie w świat frontendu. <br />Konfiguracja narzędzi
+            i środowiska.
+          </p>
+        </article>
 
-        </section>
+        <article>
+          <h3>Tydzień 2</h3>
+          <p>Warstwy strony interetowej. Podstawy HTML i CSS. <br /><em>Content is the king</em></p>
+        </article>
 
+        <article>
+          <h3>Tydzień 3</h3>
+          <p>Mieć pojęcie o programowaniu</p>
+        </article>
 
+        <article>
+          <h3>Tydzień 4</h3>
+          <p>Mieć pojęcie o programowaniu</p>
+        </article>
 
-        <section id="notatki">
-            <h2>Dziennik WTF</h2>
-            <article>
-                <h3>Jak tworzyć HTMLa?</h3>
-
-                <p>HTML to znaczniki/tagi/elementy</p>
-
-            </article>
-
-            <article>
-                <h3>Jak pięknie ostylować CSSem?</h3>
-                <p>Nauczyć się dobrze CSS</p>
-
-            </article>
-
-            <article>
-                <h3>Jak programować za pomocą Javascript?</h3>
-                <p>Mieć pojęcie o programowaniu</p>
-
-            </article>
-
-        </section>
-
-
+        <article>
+          <h3>Tydzień 5</h3>
+          <p>Mieć pojęcie o programowaniu</p>
+        </article>
+      </section>
     </main>
 
     <footer>
-
-        Strona powstaje w trakcie szkolenia WTF 2020 . <a href="#top">Wróć na górę strony</a>
-
+      Strona powstaje w trakcie szkolenia WTF 2020
+      <a href="#top"><br />Wróć na górę strony</a>
     </footer>
 
     <script src="main.js"></script>
-
-</body>
-
+  </body>
 </html>
