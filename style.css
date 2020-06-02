@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300&family=Signika&display=swap");
 
 html {
   box-sizing: border-box;
@@ -13,16 +13,63 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  background: #e9e9ec;
-  font-family: "Ubuntu", Courier, monospace;
+  background-image: radial-gradient(
+      circle at 64% 45%,
+      hsla(206, 0%, 65%, 0.04) 0%,
+      hsla(206, 0%, 65%, 0.04) 58%,
+      transparent 58%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 14% 34%,
+      hsla(206, 0%, 65%, 0.04) 0%,
+      hsla(206, 0%, 65%, 0.04) 8%,
+      transparent 8%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 70% 94%,
+      hsla(206, 0%, 65%, 0.04) 0%,
+      hsla(206, 0%, 65%, 0.04) 40%,
+      transparent 40%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 54% 39%,
+      hsla(206, 0%, 65%, 0.04) 0%,
+      hsla(206, 0%, 65%, 0.04) 57%,
+      transparent 57%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 48% 89%,
+      hsla(206, 0%, 65%, 0.04) 0%,
+      hsla(206, 0%, 65%, 0.04) 21%,
+      transparent 21%,
+      transparent 100%
+    ),
+    linear-gradient(450deg, rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 .header {
-  font-family: "Ubuntu", Courier, monospace;
-  font-size: 16px;
-  line-height: 30px;
-  background: #586f7c;
-  border-top: 2px solid #c9eddc;
+  font-family: "Signika", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  background: #276fbf;
+  border-top: 3px solid #ff7e6b;
+  position: fixed;
+  width: 100%;
+}
+
+.header__nav {
+  width: 500px;
+}
+
+.waves {
+  display: block;
+  position: relative;
+  height: 3px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(88, 111, 124, 1) 100%);
 }
 
 .navigation__wrapper {
@@ -30,15 +77,16 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #586f7c;
   margin: 0 auto;
   max-width: 1000px;
 }
 
 .header-logo {
-  font-size: 25px;
+  padding-top: 4px;
+  font-size: 29px;
   padding-left: 15px;
   margin-left: 2px;
+  letter-spacing: -0.03em;
 }
 
 .header-logo a {
@@ -47,42 +95,44 @@ body {
 }
 
 h1 {
+  font-family: "Montserrat", sans-serif;
   color: #2f4550;
-  font-size: 33px;
-  line-height: 55px;
+  font-size: 47px;
+  line-height: 74px;
   font-weight: normal;
   margin-bottom: 30px;
+  margin-top: 100px;
 }
 
 h2 {
+  font-family: "Signika", sans-serif;
   color: #2f4550;
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 49px;
   margin-top: 49px;
   margin-bottom: 19px;
 }
 
 h3 {
+  font-family: "Signika", sans-serif;
   color: #2f4550;
-
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 23px;
+  line-height: 40px;
   margin-top: 30px;
   margin-bottom: 12px;
 }
 
 .main {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
   max-width: 1000px;
   margin: 0 auto;
   line-height: 30px;
-  padding: 19px;
+  padding: 20px;
 }
 
 .navigation {
-  background: #586f7c;
-  padding: 20px;
+  padding: 15px;
 }
 
 .navigation__link {
@@ -91,10 +141,11 @@ h3 {
   margin-right: 40px;
   padding-bottom: 24px;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .navigation__link:hover {
-  color: #c9eddc;
+  color: #ff7e6b;
   -webkit-transition: opacity 0.4s ease, width 0.4s ease;
   -moz-transition: opacity 0.4s ease, width 0.4s ease;
   -ms-transition: opacity 0.4s ease, width 0.4s ease;
@@ -103,7 +154,7 @@ h3 {
 }
 
 .navigation__link--homepage {
-  color: #c9eddc;
+  color: #ff7e6b;
 }
 
 a:after {
@@ -112,7 +163,7 @@ a:after {
   position: absolute;
   bottom: 0;
   left: 50%;
-  height: 2px;
+  height: 3px;
   width: 0;
   background: transparent;
 }
@@ -124,7 +175,7 @@ a:after {
 .navigation__link:hover:after {
   width: 100%;
   left: 0;
-  background: #c9eddc;
+  background: #ff7e6b;
 }
 
 p {
@@ -134,17 +185,37 @@ p {
   line-height: 30px;
 }
 
-footer {
-  color: #c9eddc;
-  background: #586f7c;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: block;
+.footer {
+  font-family: "Signika", sans-serif;
+  font-size: 18px;
+  padding: 15px;
+  color: #fff;
+  width: 100%;
+  background: #276fbf;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.footer__text {
+  padding-left: 15px;
 }
 
 .photo {
+  margin-top: 20px;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   max-width: 300px;
-  background: #eceaea;
+  background-image: radial-gradient(
+    circle at 64% 45%,
+    hsla(206, 0%, 65%, 0.04) 0%,
+    hsla(206, 0%, 65%, 0.04) 58%,
+    transparent 58%,
+    transparent 100%
+  );
 }
